@@ -3,22 +3,17 @@
 
 
 public class FizzBuzz {
-		public String fizzBuzz(int number) {
+	public String fizzBuzz(int number) {
 			
-			if(number % 3 == 0 && number % 5 == 0){
-				System.out.println("FizzBuzzz");
-				
-			} else if(number % 3 == 0) {
-				System.out.println("Fizz");
-			} else if(number % 5 == 0) {
-				System.out.println("Buzz");
-			} else{
-				String result = Integer.toString(number);
-				System.out.println(result);
-			}
-			return null;
-			
+		if(number % 3 == 0 && number % 5 == 0){
+			return "FizzBuzz";
+		} else if(number % 3 == 0) {
+			return "Fizz";
+		} else if(number % 5 == 0) {
+			return "Buzz";
+		} else{
+			String result = Integer.toString(number);
+			return result;
 		}
-		
-		
+	}
 }
